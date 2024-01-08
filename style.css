@@ -1,0 +1,82 @@
+.buttons1 {
+  padding: 0.8em 1.8em;
+  border: 2px solid #0a0a0a;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #0b0c0c;
+ }
+ 
+ .buttons1::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #01ffe6;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .buttons1:hover::before {
+  width: 105%;
+ }
+ 
+ .buttons1:hover {
+  color: #111;
+ }
+
+
+
+@media (max-width:350px) {
+  .col-md-5 img{
+    width: 300px;
+    height: 250px;
+  }
+  .container-1 {
+     height: 120vh;
+      margin-top: 5%;
+      background-color: rgb(255, 255, 255);
+  }
+  .container-1 .images55 .images2 img{
+    height: 40vh;
+    width: 86%;
+    margin-left: 14%;
+}
+  .container-1 .images55 .images3 img{
+  height: 40vh;
+  width: 86%;
+  margin-left: 14%;
+  margin-top: 2%;
+  }
+  .container-1 .images55{
+    display: block;
+  }
+  .container-image .contact {
+    margin-top: 50%;
+  }
+}
+@media (max-width:900px) {
+  .col-md-5 img{
+    width: 300px;
+    height: 250px;
+  }
+  .images55 .images1{
+    margin-left: -5%;
+  }
+  .images55 .images2{
+    margin-left: -11%;
+  }
+  .images55 .images3{
+    margin-left: -10%;
+  }
+}
